@@ -1,0 +1,41 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    {% block title %}{% endblock %}
+    <!-- Bootstrap Files -->
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}">
+</head>
+<body>
+
+    <!--*/*/*/*/*/*/*/
+    Top Header Section
+     */*/*/*/*/*/*/-->
+    <div class="container-fluid top-header">
+        <div class="row row-CTA">
+            <div class="col-sm-12 col-md-4 col-md-offset-4 col-xs-12">
+                <a href="www.heylets.com" class="top-CTA">CAPTURE INCREDIBLE EXPERIENCES</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div id="header">
+                    <img src="{% static 'img/HeyLetsInverseLogo.png' %}" alt="HeyLets Logo">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% block content %}
+
+
+    {% endblock %}
+
+<script type="text/javascript" src="//s3.amazonaws.com/scripts.hellobar.com/26742e6e9b47ec1f1ec29eddce34ad4efb5f6d98.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Django Template Blog Title | HeyLets
+{% endblock %}
+
+{% block content %}
+    <div class="container blog-post">
+        <div class="row row-date">
+            <div class="col-xs-12 col-date">
+                <p class="blog-date">{{ post.blog_date }}</p>
+            </div>
+        </div>
+        <div class="row row-title">
+            <div class="col-xs-12 col-title">
+                <h1 class="blog-title">{{ post.blog_title }}</h1>
+            </div>
+        </div>
+        <div class="row row-content">
+            <div class="col-xs-12">
+                <p class="blog-content">{{ post.blog_content }}</p>
+            </div>
+        </div>
+    </div>
+
+
+{% endblock %}

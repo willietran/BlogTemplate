@@ -2,40 +2,44 @@ body {
     font-family: helvetica, sans-serif;
 }
 
+
 /*************************************************
-                Top Header Section
+                Navigation Bar
 *************************************************/
 
-.top-header {
-    text-align: center;
-    background-color: #de5300;
+.navbar {
+    /*padding-left: 10%;*/
+    /*padding-bottom: 0;*/
+    padding: 0 10%;
+    background-color: #ffffff;
+    background-image: none;
 }
 
 #header {
-    clear: both;
-    margin: 0 auto 0;
-    padding-bottom: 2%;
+    margin-right: 10%;
+    /*position: relative;*/
 }
 
-.top-CTA, .top-CTA:hover {
-    display: block;
-    border: 2px solid white;
-    text-decoration: none;
-    color: white;
-    padding: 9px;
-    width: 300px;
-    margin: 0 auto;
-    margin-top: 5%;
-    margin-bottom: 5%;
+.try-button {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    border-radius: 2px;
+    font-weight: lighter;
 }
 
+@media screen and (max-width: 768px) {
+    .try-button {
+        display: none;
+    }
+}
 
 /*************************************************
                 Blog Content
 *************************************************/
 
 .blog-post {
-    padding: 5% 10% 5%;
+    padding: 2% 10% 5%;
 }
 
 .col-title, .col-date {
@@ -57,7 +61,7 @@ body {
     color: #27295e;
     line-height: 40px;
     font-weight: lighter;
-    font-size: 40px;
+    font-size: 32px;
     border-bottom: 4px solid #e8e8e8;
 }
 
@@ -66,4 +70,38 @@ body {
     font-family: 'ROBOTO', serif;
     font-size: 18px;
     line-height: 200%;
+}
+
+/*************************************************
+                Side-Bar
+*************************************************/
+.side-bar-content {
+    padding-top: 15%;
+    padding-left: 10%;
+}
+
+.side-bar-title {
+    font-family: helvetica, sans-serif;
+    font-size: 2rem;
+    color: #888;
+    padding-bottom: .50rem;
+}
+
+.side-bar-list {
+    list-style: none;
+    padding-left: 2px;
+    text-decoration: none;
+    font-size: 1.25rem;
+    line-height: 2.75rem;
+}
+
+.side-bar-list > li > a {
+    color: #888;
+    background: none;
+}
+
+.side-bar-image {
+    width: 100%;
+    height: auto;
+
 }

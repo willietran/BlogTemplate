@@ -16,28 +16,39 @@
 </head>
 <body>
 
-    <!--*/*/*/*/*/*/*/
-    Top Header Section
-     */*/*/*/*/*/*/-->
-    <div class="container-fluid top-header">
-        <div class="row row-CTA">
-            <div class="col-sm-12 col-md-4 col-md-offset-4 col-xs-12">
-                <a href="www.heylets.com" class="top-CTA">CAPTURE INCREDIBLE EXPERIENCES</a>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-12">
-                <div id="header">
-                    <img src="{% static 'img/HeyLetsInverseLogo.png' %}" alt="HeyLets Logo">
-                </div>
-            </div>
+    <!-------------------------------------
+                Top Header Section
+     ------------------------------------->
+    <div class="navbar navbar-default">
+        <div id="header">
+            <a href="www.heylets.com"><img src="{% static 'img/HeyLetsLogo.png' %}" alt="HeyLets Logo" width="200" height="auto"></a>
+            <i class="icon-rss"></i>
+{#            <a class="nav navbar-right"href="www.heylets.com"><button class="btn btn-primary try-button">Try HeyLets Now</button></a>#}
         </div>
     </div>
 
-    {% block content %}
+<div class="container blog-post">
+    <div class="row row-content">
+        <div class="col-sm-5 visible-md visible-lg pull-right side-bar-content">
+            <a href="#"><img class="side-bar-image" src="{% static 'img/PoF_ad_Your_Drink_CTA_Text.png' %}" alt="What Your Drink Says About You"></a>
+            <h1 class="side-bar-title">Recent Posts</h1>
+            <ul class="side-bar-list">
+                <li><a href="#">Stuff About Things And Other Stuff</a></li>
+                <li><a href="#">Stuff About Things And Other Stuff</a></li>
+                <li><a href="#">Stuff About Things And Other Stuff</a></li>
+                <li><a href="#">Stuff About Things And Other Stuff</a></li>
+                <li><a href="#">Stuff About Things And Other Stuff</a></li>
+                <li><a href="#">Stuff About Things And Other Stuff</a></li>
+                <li><a href="#">Stuff About Things And Other Stuff</a></li>
+            </ul>
+        </div>
+    <div class="wrapper">
 
+    {% block content %}{% endblock %}
 
-    {% endblock %}
+    </div>
+    </div>
+</div>
 
 <script type="text/javascript" src="//s3.amazonaws.com/scripts.hellobar.com/26742e6e9b47ec1f1ec29eddce34ad4efb5f6d98.js"></script>
 </body>

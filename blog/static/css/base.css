@@ -55,7 +55,7 @@ body {
 }
 
 .blog-title {
-    padding: 0px 0px 20px 0px;
+    padding: 0 0 20 0;
     text-transform: uppercase;
     font-family: avenir, helvetica, sans-serif;
     color: #27295e;
@@ -70,6 +70,11 @@ body {
     font-family: 'ROBOTO', serif;
     font-size: 18px;
     line-height: 200%;
+}
+
+.social-share, .st_facebook_large {
+    padding-left: 0;
+    margin-bottom: 5rem;
 }
 
 /*************************************************
